@@ -1,1 +1,7 @@
-
+body {
+  font: var(--body-font);
+  color: var(--body-color);
+  background-color: var(--body-bg);
+  display: grid;
+  place-content: center;
+}
