@@ -1,1 +1,7 @@
 @use '../abstracts' as abstract;
+
+@include abstract.font-face(
+  $font-family: 'Kumbh Sans',
+  $font-path: '../assets/fonts/Kumbh_Sans/KumbhSans-VariableFont_YOPQ,wght.ttf',
+  $font-weight: 400 700
+);
