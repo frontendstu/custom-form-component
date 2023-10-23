@@ -19,4 +19,12 @@
   --body-font: var(--fw-regular) var(--fs-primary) var(--ff-primary);
   --body-color: hsl(var(--color-neutral-500));
   --body-bg: hsl(var(--color-neutral-150));
+
+  // ---------- LINKS
+  --link-decoration: none;
+  --link-decoration-active: none;
+  --link-fw: var(--fw-bold);
+  --link-color: hsl(var(--color-neutral-500));
+  --link-color-active: hsla(var(--color-neutral-500), 0.5);
+  --link-transition: 200ms linear all;
 }
