@@ -14,4 +14,9 @@
   --fw-bold: 700;
   --fs-primary: 1rem;
   --ff-primary: 'Kumbh Sans', sans-serif;
+
+  // ---------- BODY
+  --body-font: var(--fw-regular) var(--fs-primary) var(--ff-primary);
+  --body-color: hsl(var(--color-neutral-500));
+  --body-bg: hsl(var(--color-neutral-150));
 }
