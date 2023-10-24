@@ -13,9 +13,18 @@
 // ----- Form Group
 .form-group {
   margin-top: var(--form-group-margin-top);
+  border-bottom: var(--form-control-border-bottom);
 
   &:first-child {
     margin-top: 0;
+  }
+}
+
+.form-group.form-alert {
+  border-bottom: 1px solid hsl(var(--color-error));
+
+  input {
+    color: hsl(var(--color-error)) !important;
   }
 }
 
@@ -23,8 +32,7 @@
 .form-control {
   color: var(--form-control-color);
   border: 0;
-  border-bottom: var(--form-control-border-bottom);
-  padding-inline: var(----form-control-padding-inline);
+  padding-inline: var(--form-control-padding-inline);
   padding-bottom: var(--form-control-padding-bottom);
 
   &::placeholder {
@@ -112,4 +120,11 @@ form {
   button {
     margin-top: 2.5rem;
   }
+}
+
+// ----- Form Validation
+.form-error {
+  position: absolute;
+  left: 59%;
+  right: 0;
 }
