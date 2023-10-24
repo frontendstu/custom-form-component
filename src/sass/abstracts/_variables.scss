@@ -62,4 +62,22 @@
 
   @media (min-width: 48em) {
   }
+
+  // ------ Custom Select
+  --custom-select-fw: var(--fw-bold);
+  --custom-select-toggle-icon-transition: transform 300ms;
+
+  --custom-select-plan-price-color: hsla(var(--color-neutral-900), 0.4);
+  --custom-select-plan-price-margin-left: 0.5rem;
+
+  --custom-select-active-bg: hsl(var(--color-neutral-100));
+  --custom-select-active-border: 1px solid hsla(var(--color-neutral-500), 0.15);
+  --custom-select-active-radius: 8px;
+  --custom-select-active-box-shadow: var(--form-wrapper-box-shadow);
+  --custom-select-active-padding: 1.5rem 2rem;
+
+  --custom-select-option-color: hsl(var(--color-neutral-900));
+  --custom-select-option-border-bottom: var(--form-control-border-bottom);
+  --custom-select-option-margin-top: 1.5rem;
+  --custom-select-option-padding-bottom: var(--form-control-padding-bottom);
 }
