@@ -1,1 +1,17 @@
 @use '../abstracts' as abstract;
+
+.btn {
+  font-weight: var(--btn-fw);
+  cursor: pointer;
+  color: var(--btn-color);
+  background-color: var(--btn-bg);
+  border: 0;
+  border-radius: var(--btn-radius);
+  transition: var(--btn-transition);
+  padding-block: var(--btn-padding-block);
+  width: 100%;
+
+  @include abstract.hover-focus-within {
+    background-color: var(--btn-bg-active);
+  }
+}
