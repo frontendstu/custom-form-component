@@ -33,8 +33,6 @@
 
   @include abstract.focus {
     outline: var(--form-control-outline);
-    outline-offset: var(--form-control-outline-offset);
-    border-radius: var(--form-control-outline-radius);
   }
 }
 
