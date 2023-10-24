@@ -81,4 +81,13 @@
 
   // ------ Form Submit Button
   --form-submit-btn-margin-top: 2.5rem;
+
+  // -------- Buttons
+  --btn-fw: var(--fw-bold);
+  --btn-color: hsl(var(--color-neutral-100));
+  --btn-bg: hsl(var(--color-primary));
+  --btn-bg-active: hsl(228, 100%, 75%);
+  --btn-radius: 99vw;
+  --btn-transition: var(--link-transition);
+  --btn-padding-block: 0.875rem;
 }
