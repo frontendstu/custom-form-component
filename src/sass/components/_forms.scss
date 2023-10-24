@@ -1,1 +1,11 @@
 @use '../abstracts' as abstract;
+
+// ----- Form Wrapper
+.form-wrapper {
+  color: var(--form-wrapper-color);
+  background-color: var(--form-wrapper-bg);
+  border-radius: var(--form-wrapper-radius);
+  box-shadow: var(--form-wrapper-box-shadow);
+  padding: var(--form-wrapper-padding);
+  width: var(--form-wrapper-width);
+}
