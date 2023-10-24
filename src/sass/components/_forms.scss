@@ -37,3 +37,74 @@
     border-radius: var(--form-control-outline-radius);
   }
 }
+
+// ----- Custom Select
+.custom-select {
+  font-weight: var(--custom-select-fw);
+  cursor: pointer;
+  position: relative;
+
+  &__visible {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__toggle-icon img {
+    transform: rotate(0deg);
+    transition: var(--custom-select-toggle-icon-transition);
+  }
+
+  &__toggle-icon.rotate img {
+    transform: rotate(180deg);
+  }
+
+  &__plan span {
+    &:nth-child(even) {
+      color: var(--custom-select-plan-price-color);
+      margin-left: var(--custom-select-plan-price-margin-left);
+    }
+  }
+
+  &__hidden {
+    display: none;
+  }
+
+  &__hidden.active {
+    background-color: var(--custom-select-active-bg);
+    border: var(--custom-select-active-border);
+    border-radius: var(--custom-select-active-radius);
+    box-shadow: var(--custom-select-active-box-shadow);
+    padding: var(--custom-select-active-padding);
+    z-index: 999;
+    position: absolute;
+    left: 0;
+    top: 115%;
+    display: block;
+    width: 100%;
+    height: fit-content;
+  }
+
+  &__option {
+    color: var(--custom-select-option-color);
+    border-bottom: var(--custom-select-option-border-bottom);
+    margin-top: var(--custom-select-option-margin-top);
+    padding-bottom: var(--custom-select-option-padding-bottom);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &:first-child {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      border-bottom: 0;
+      padding-bottom: 0;
+    }
+  }
+
+  &__selected-icon {
+    display: none;
+  }
+}
