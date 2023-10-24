@@ -10,6 +10,15 @@
   width: var(--form-wrapper-width);
 }
 
+// ----- Form Group
+.form-group {
+  margin-top: var(--form-group-margin-top);
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
 // ----- Form Control
 .form-control {
   color: var(--form-control-color);
