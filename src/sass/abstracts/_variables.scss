@@ -27,4 +27,20 @@
   --link-color: hsl(var(--color-neutral-500));
   --link-color-active: hsla(var(--color-neutral-500), 0.5);
   --link-transition: 200ms linear all;
+
+  // ---------- COMPONENTS
+
+  // -------- Forms
+
+  // ------ Form Wrapper
+  --form-wrapper-color: hsla(var(--color-neutral-500), 0.5);
+  --form-wrapper-bg: hsl(var(--color-neutral-100));
+  --form-wrapper-radius: 13px;
+  --form-wrapper-box-shadow: 0px 50px 50px -25px hsla(var(--color-neutral-700), 0.25);
+  --form-wrapper-padding: 2.5rem 2.625rem;
+  --form-wrapper-width: 20.4375rem;
+
+  @media (min-width: 48em) {
+    --form-wrapper-width: 27.8125rem;
+  }
 }
