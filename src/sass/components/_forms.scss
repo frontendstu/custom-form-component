@@ -24,7 +24,7 @@
   color: var(--form-control-color);
   border: 0;
   border-bottom: var(--form-control-border-bottom);
-  padding-left: var(--form-control-padding-left);
+  padding-inline: var(----form-control-padding-inline);
   padding-bottom: var(--form-control-padding-bottom);
 
   &::placeholder {
