@@ -2,25 +2,27 @@
 const formName = document.getElementById('name');
 const formEmail = document.getElementById('email');
 
-const error =
-  '<span class="form-error"><img src="../assets/images/icon-cross.svg"></span>';
-
 function createError(element) {
-  const span = document.createElement('span');
-  const img = document.createElement('img');
+  // Check if the error element already exists
+  if (!element.parentElement.querySelector('.form-error')) {
+    const span = document.createElement('span');
+    const img = document.createElement('img');
 
-  span.classList.add('form-error');
-  img.setAttribute('src', '../assets/images/icon-cross.svg');
+    span.classList.add('form-error');
+    img.setAttribute('src', '../assets/images/icon-cross.svg');
 
-  span.appendChild(img);
-  element.parentElement.appendChild(span);
-  element.parentElement.classList.add('form-alert');
+    span.appendChild(img);
+    element.parentElement.appendChild(span);
+    element.parentElement.classList.add('form-alert');
+  }
 }
 
 function removeError(element) {
-  const errorElement = document.querySelector('form-error');
-  errorElement?.remove();
-  element.parentElement?.classList.remove('form-alert');
+  const errorElement = element.parentElement.querySelector('.form-error');
+  if (errorElement) {
+    errorElement.remove();
+    element.parentElement.classList.remove('form-alert');
+  }
 }
 
 formName.addEventListener('blur', () => {
@@ -35,6 +37,6 @@ formEmail.addEventListener('blur', () => {
   if (!formEmail.value.match(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/)) {
     createError(formEmail);
   } else {
-    removeError(email);
+    removeError(formEmail); // Fixed a typo: change "email" to "formEmail"
   }
 });
