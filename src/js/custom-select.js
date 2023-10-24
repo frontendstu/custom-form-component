@@ -13,10 +13,11 @@ select.addEventListener('click', function (e) {
 
 selectOption.forEach((select) => {
   select.addEventListener('click', function (e) {
-    selectOption.forEach((selectedIcon) => selectedIcon.remove('selected'));
+    selectOption.forEach((icon) => icon.classList.remove('selected'));
     this.classList.add('selected');
     selectHidden.classList.toggle('active');
-    selectedIcon.classList.toggle('rotate');
+    selectedIcon.forEach((icon) => icon.classList.toggle('rotate'));
+
     selectedPlan.textContent = this.childNodes[1].childNodes[1].innerText;
     selectedPrice.textContent = this.childNodes[1].childNodes[3].innerText;
 
