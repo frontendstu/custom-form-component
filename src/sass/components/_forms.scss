@@ -9,3 +9,22 @@
   padding: var(--form-wrapper-padding);
   width: var(--form-wrapper-width);
 }
+
+// ----- Form Control
+.form-control {
+  color: var(--form-control-color);
+  border: 0;
+  border-bottom: var(--form-control-border-bottom);
+  padding-left: var(--form-control-padding-left);
+  padding-bottom: var(--form-control-padding-bottom);
+
+  &::placeholder {
+    color: var(--form-control-placeholder-color);
+  }
+
+  @include abstract.focus {
+    outline: var(--form-control-outline);
+    outline-offset: var(--form-control-outline-offset);
+    border-radius: var(--form-control-outline-radius);
+  }
+}
