@@ -56,9 +56,7 @@
 
   --form-control-placeholder-color: hsla(var(--color-neutral-500), 0.5);
 
-  --form-control-outline: 3px solid hsla(var(--color-primary), 0.4);
-  --form-control-outline-offset: 0.25em;
-  --form-control-outline-radius: 1px;
+  --form-control-outline: 0;
 
   @media (min-width: 48em) {
   }
