@@ -42,7 +42,16 @@
           />
         </div>
 
-        <div class="form-group custom-select">
+        <div class="form-group sr-only" aria-hidden="false">
+          <label for="plan">Plan</label>
+          <select name="plan" id="plan">
+            <option value="basic">Basic - Free</option>
+            <option value="pro">Pro - $9.99</option>
+            <option value="ultimate">Ultimate - $19.99</option>
+          </select>
+        </div>
+
+        <div class="form-group custom-select" aria-hidden="true">
           <div class="custom-select__visible form-control">
             <div class="custom-select__plan">
               <span class="custom-select__visible-text">Basic Pack</span>
