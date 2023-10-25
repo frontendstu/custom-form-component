@@ -118,7 +118,7 @@
 // ----- Form Submit
 form {
   button {
-    margin-top: 2.5rem;
+    margin-top: var(--form-submit-btn-margin-top);
   }
 }
 
