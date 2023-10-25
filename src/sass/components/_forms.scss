@@ -18,13 +18,17 @@
   &:first-child {
     margin-top: 0;
   }
-}
 
-.form-group.form-alert {
-  border-bottom: 1px solid hsl(var(--color-error));
+  &.form-alert {
+    border-bottom: 1px solid hsl(var(--color-error));
 
-  input {
-    color: hsl(var(--color-error)) !important;
+    input {
+      color: var(--form-validation-error-alert-color);
+
+      &::placeholder {
+        color: var(--form-validation-error-alert-placeholder-color);
+      }
+    }
   }
 }
 
