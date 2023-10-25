@@ -125,6 +125,5 @@ form {
 // ----- Form Validation
 .form-error {
   position: absolute;
-  left: 59%;
-  right: 0;
+  transform: var(--form-validation-error-icon-transform);
 }
