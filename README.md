@@ -1,31 +1,9 @@
-# Sass Starter
+# Custom Form Component
 
-A barebones starter template to get your app off the ground quickly. Featuring little to no mixins, no pre-defined variables or utility classes.
+A form component with custom select and form validation.
 
-## Getting Started
+This is the form component of the [Office Lite Coming Soon Site](https://www.frontendmentor.io/challenges/officelite-coming-soon-site-M4DIPNz8g) challenge on [Frontend Mentor](https://www.frontendmentor.io/).
 
-In order to use Sass Starter, you will need the following installed on your machine:
+I decided to build the `<form>` as a standalone component to keep it for future projects.
 
-- Node.js v18.16.1 (https://nodejs.org/en)
-- NPM v9.7.2 (https://www.npmjs.com/)
-
-## Clone Repository
-
-```shell
-https://github.com/frontendstu/sass-starter
-```
-
-## Installation
-
-1. Navigation to project directory
-2. Run the following command
-
-```shell
-npm install
-```
-
-3. Once the package is installed, run the following command
-
-```shell
-npm run start
-```
+[Live Link](https://frontendstu.github.io/custom-form-component/)
