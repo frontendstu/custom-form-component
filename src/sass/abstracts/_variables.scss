@@ -83,6 +83,11 @@
   --form-submit-btn-margin-top: 2.5rem;
 
   // ------ Form Validation
+  --form-validation-error-alert-color: hsl(var(--color-error));
+  --form-validation-error-alert-placeholder-color: hsla(
+    var(--color-error),
+    0.5
+  );
   --form-validation-error-icon-transform: translateX(-2.5rem);
 
   // -------- Buttons
